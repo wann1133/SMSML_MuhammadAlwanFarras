@@ -18,6 +18,12 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Check Env
+        run: |
+          python -V
+          pip -V
+          pip show mlflow scikit-learn pandas || true
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -27,6 +33,22 @@ jobs:
         run: |
           cd Workflow-CI/MLProject
           mlflow run . --env-manager=local
+
+      - name: Get latest MLflow run id
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import mlflow
+          tracking_path = Path("Workflow-CI/MLProject/mlruns").resolve()
+          mlflow.set_tracking_uri(tracking_path.as_uri())
+          exp = mlflow.get_experiment_by_name("workflow-ci")
+          if exp is None:
+              raise SystemExit("Experiment workflow-ci not found")
+          runs = mlflow.search_runs([exp.experiment_id], order_by=["start_time DESC"], max_results=1)
+          if runs.empty:
+              raise SystemExit("No runs found in workflow-ci")
+          print(f"Latest run id: {runs.loc[0, 'run_id']}")
+          PY
 
       - name: Upload MLflow artifacts
         if: success()
