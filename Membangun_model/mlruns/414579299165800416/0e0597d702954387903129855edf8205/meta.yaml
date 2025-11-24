@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Project/Submission_MSML/SMSML_MuhammadAlwanFarras/Membangun_model/mlruns/414579299165800416/0e0597d702954387903129855edf8205/artifacts
+end_time: 1763972970735
+entry_point_name: ''
+experiment_id: '414579299165800416'
+lifecycle_stage: active
+run_id: 0e0597d702954387903129855edf8205
+run_name: trial-0
+run_uuid: 0e0597d702954387903129855edf8205
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763972970612
+status: 3
+tags: []
+user_id: alwan

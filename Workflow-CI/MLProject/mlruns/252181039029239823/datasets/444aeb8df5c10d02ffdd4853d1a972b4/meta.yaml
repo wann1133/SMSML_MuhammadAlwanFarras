@@ -1,0 +1,10 @@
+digest: ca18397d
+name: dataset
+profile: '{"num_rows": 119, "num_elements": 476}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "feature_1", "required": true},
+  {"type": "double", "name": "feature_2", "required": true}, {"type": "double", "name":
+  "feature_3", "required": true}, {"type": "double", "name": "feature_4", "required":
+  true}]}'
+source: '{"tags": {"mlflow.user": "alwan", "mlflow.source.name": "modelling.py", "mlflow.source.type":
+  "LOCAL"}}'
+source_type: code

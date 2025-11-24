@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Project/Submission_MSML/SMSML_MuhammadAlwanFarras/Membangun_model/mlruns/414579299165800416/f40f9143221d4f26b14c3d2893446df0/artifacts
+end_time: 1763972982111
+entry_point_name: ''
+experiment_id: '414579299165800416'
+lifecycle_stage: active
+run_id: f40f9143221d4f26b14c3d2893446df0
+run_name: rf-grid-search
+run_uuid: f40f9143221d4f26b14c3d2893446df0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763972970579
+status: 3
+tags: []
+user_id: alwan

@@ -1,0 +1,13 @@
+name: iris-workflow-ci
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - mlflow==2.19.0
+      - pandas>=1.5
+      - numpy>=1.24
+      - scikit-learn>=1.4
+      - matplotlib>=3.8

@@ -1,0 +1,26 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 2.19.0
+model_size_bytes: 964
+model_uuid: a13ed64962eb498e99f318d2582973b2
+run_id: d5e3ba74113045f5b8ff6b55ac5fa2bc
+signature:
+  inputs: '[{"type": "double", "name": "feature_1", "required": true}, {"type": "double",
+    "name": "feature_2", "required": true}, {"type": "double", "name": "feature_3",
+    "required": true}, {"type": "double", "name": "feature_4", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2025-11-24 08:16:17.468741'

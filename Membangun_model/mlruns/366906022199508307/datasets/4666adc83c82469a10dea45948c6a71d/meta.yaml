@@ -1,0 +1,10 @@
+digest: d023bb2c
+name: dataset
+profile: '{"num_rows": 30, "num_elements": 120}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "feature_1", "required": true},
+  {"type": "double", "name": "feature_2", "required": true}, {"type": "double", "name":
+  "feature_3", "required": true}, {"type": "double", "name": "feature_4", "required":
+  true}]}'
+source: '{"tags": {"mlflow.user": "alwan", "mlflow.source.name": "SMSML_MuhammadAlwanFarras/Membangun_model/modelling.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code

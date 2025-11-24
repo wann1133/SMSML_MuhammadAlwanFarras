@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Project/Submission_MSML/SMSML_MuhammadAlwanFarras/Workflow-CI/MLProject/mlruns/0/966ee1109f2c400488ec92f318c10d6f/artifacts
+end_time: 1763973576181
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 966ee1109f2c400488ec92f318c10d6f
+run_name: amusing-fly-750
+run_uuid: 966ee1109f2c400488ec92f318c10d6f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763973572306
+status: 4
+tags: []
+user_id: alwan

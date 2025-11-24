@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Project/Submission_MSML/SMSML_MuhammadAlwanFarras/Workflow-CI/MLProject/mlruns/252181039029239823/8d72e2fcad014fea846aa8ad1bb51382/artifacts
+end_time: 1763975386178
+entry_point_name: ''
+experiment_id: '252181039029239823'
+lifecycle_stage: active
+run_id: 8d72e2fcad014fea846aa8ad1bb51382
+run_name: calm-hen-806
+run_uuid: 8d72e2fcad014fea846aa8ad1bb51382
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763975338101
+status: 3
+tags: []
+user_id: alwan
