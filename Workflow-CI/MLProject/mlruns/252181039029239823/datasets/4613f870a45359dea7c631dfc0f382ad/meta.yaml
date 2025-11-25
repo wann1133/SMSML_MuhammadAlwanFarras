@@ -1,0 +1,27 @@
+digest: '49056796'
+name: dataset
+profile: '{"num_rows": 455, "num_elements": 13650}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "feature_1", "required": true},
+  {"type": "double", "name": "feature_2", "required": true}, {"type": "double", "name":
+  "feature_3", "required": true}, {"type": "double", "name": "feature_4", "required":
+  true}, {"type": "double", "name": "feature_5", "required": true}, {"type": "double",
+  "name": "feature_6", "required": true}, {"type": "double", "name": "feature_7",
+  "required": true}, {"type": "double", "name": "feature_8", "required": true}, {"type":
+  "double", "name": "feature_9", "required": true}, {"type": "double", "name": "feature_10",
+  "required": true}, {"type": "double", "name": "feature_11", "required": true}, {"type":
+  "double", "name": "feature_12", "required": true}, {"type": "double", "name": "feature_13",
+  "required": true}, {"type": "double", "name": "feature_14", "required": true}, {"type":
+  "double", "name": "feature_15", "required": true}, {"type": "double", "name": "feature_16",
+  "required": true}, {"type": "double", "name": "feature_17", "required": true}, {"type":
+  "double", "name": "feature_18", "required": true}, {"type": "double", "name": "feature_19",
+  "required": true}, {"type": "double", "name": "feature_20", "required": true}, {"type":
+  "double", "name": "feature_21", "required": true}, {"type": "double", "name": "feature_22",
+  "required": true}, {"type": "double", "name": "feature_23", "required": true}, {"type":
+  "double", "name": "feature_24", "required": true}, {"type": "double", "name": "feature_25",
+  "required": true}, {"type": "double", "name": "feature_26", "required": true}, {"type":
+  "double", "name": "feature_27", "required": true}, {"type": "double", "name": "feature_28",
+  "required": true}, {"type": "double", "name": "feature_29", "required": true}, {"type":
+  "double", "name": "feature_30", "required": true}]}'
+source: '{"tags": {"mlflow.user": "alwan", "mlflow.source.name": "modelling.py", "mlflow.source.type":
+  "LOCAL", "mlflow.source.git.commit": "7fa9164d1015869a53ca12f09bca625f4f77eaa3"}}'
+source_type: code
