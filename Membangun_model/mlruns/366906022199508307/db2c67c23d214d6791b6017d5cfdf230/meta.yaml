@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Project/Submission_MSML/SMSML_MuhammadAlwanFarras/Membangun_model/mlruns/366906022199508307/db2c67c23d214d6791b6017d5cfdf230/artifacts
+end_time: 1764047401018
+entry_point_name: ''
+experiment_id: '366906022199508307'
+lifecycle_stage: active
+run_id: db2c67c23d214d6791b6017d5cfdf230
+run_name: logreg-basic
+run_uuid: db2c67c23d214d6791b6017d5cfdf230
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764047392171
+status: 3
+tags: []
+user_id: alwan

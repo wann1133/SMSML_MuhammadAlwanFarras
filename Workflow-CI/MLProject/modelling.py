@@ -12,7 +12,7 @@ from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_sc
 from sklearn.model_selection import train_test_split
 
 
-DATA_PATH = Path(__file__).resolve().parent / "namadataset_preprocessing/iris_preprocessed.csv"
+DATA_PATH = Path(__file__).resolve().parent / "namadataset_preprocessing/breast_cancer_preprocessed.csv"
 TRACKING_DIR = Path(__file__).resolve().parent / "mlruns"
 
 

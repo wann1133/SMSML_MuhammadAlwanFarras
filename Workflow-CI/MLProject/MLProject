@@ -5,7 +5,7 @@ conda_env: conda.yaml
 entry_points:
   main:
     parameters:
-      data_path: {type: string, default: "namadataset_preprocessing/iris_preprocessed.csv"}
+      data_path: {type: string, default: "namadataset_preprocessing/breast_cancer_preprocessed.csv"}
       test_size: {type: float, default: 0.2}
       random_state: {type: integer, default: 42}
       max_iter: {type: integer, default: 200}

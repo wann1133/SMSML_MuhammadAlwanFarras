@@ -13,12 +13,11 @@ except ImportError:
     mlflow = None  # type: ignore
 
 
-DEFAULT_DATA = Path(__file__).resolve().parent.parent / "Membangun_model/namadataset_preprocessing/iris_preprocessed.csv"
-LABEL_MAPPING = {0: "setosa", 1: "versicolor", 2: "virginica"}
+DEFAULT_DATA = Path(__file__).resolve().parent.parent / "Membangun_model/namadataset_preprocessing/breast_cancer_preprocessed.csv"
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Simple inference helper for the Iris model.")
+    parser = argparse.ArgumentParser(description="Simple inference helper for the Breast Cancer model.")
     parser.add_argument("--model_uri", type=str, default="", help="Optional MLflow model URI or local path.")
     parser.add_argument(
         "--data_path",
@@ -26,7 +25,13 @@ def parse_args() -> argparse.Namespace:
         default=DEFAULT_DATA,
         help="Fallback dataset used for training/picking default features.",
     )
-    parser.add_argument("--features", nargs=4, type=float, metavar=("f1", "f2", "f3", "f4"))
+    parser.add_argument(
+        "--features",
+        nargs="+",
+        type=float,
+        metavar=("f1", "f2", "..."),
+        help="Optional feature values; provide 30 numbers if supplied.",
+    )
     return parser.parse_args()
 
 
@@ -61,7 +66,7 @@ def main() -> None:
 
     preds = model.predict(features)
     pred_class = int(preds[0])
-    label = LABEL_MAPPING.get(pred_class, str(pred_class))
+    label = "benign" if pred_class == 1 else "malignant"
     print(f"Predicted class: {pred_class} ({label})")
 
 

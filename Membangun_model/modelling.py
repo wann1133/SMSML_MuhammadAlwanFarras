@@ -17,12 +17,12 @@ from sklearn.metrics import (
 from sklearn.model_selection import train_test_split
 
 
-DATA_PATH = Path(__file__).resolve().parent / "namadataset_preprocessing/iris_preprocessed.csv"
+DATA_PATH = Path(__file__).resolve().parent / "namadataset_preprocessing/breast_cancer_preprocessed.csv"
 TRACKING_DIR = Path(__file__).resolve().parent / "mlruns"
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Train a basic Iris classifier with MLflow autologging.")
+    parser = argparse.ArgumentParser(description="Train a basic Breast Cancer classifier with MLflow autologging.")
     parser.add_argument(
         "--data_path",
         type=Path,

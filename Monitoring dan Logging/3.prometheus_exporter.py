@@ -23,7 +23,7 @@ except ImportError:
 
 
 BASE_DIR = Path(__file__).resolve().parent
-DEFAULT_DATA = BASE_DIR.parent / "Membangun_model/namadataset_preprocessing/iris_preprocessed.csv"
+DEFAULT_DATA = BASE_DIR.parent / "Membangun_model/namadataset_preprocessing/breast_cancer_preprocessed.csv"
 
 INFERENCE_COUNTER = Counter("iris_inference_requests_total", "Total inference requests")
 INFERENCE_LATENCY = Histogram("iris_inference_latency_seconds", "Latency per inference")

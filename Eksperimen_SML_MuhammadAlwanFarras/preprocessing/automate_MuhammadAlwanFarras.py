@@ -1,10 +1,10 @@
 """
-Automated preprocessing pipeline converted from the experiment notebook.
+Automated preprocessing pipeline converted from the experiment notebook (Breast Cancer Wisconsin Diagnostic).
 Steps:
 - drop duplicates
 - impute missing numeric values with the median
 - scale numeric features
-- encode target labels
+- encode/clean target labels
 """
 
 from __future__ import annotations
@@ -17,11 +17,11 @@ import pandas as pd
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import LabelEncoder, StandardScaler
+from sklearn.preprocessing import StandardScaler
 
 
-RAW_DEFAULT = Path(__file__).resolve().parent.parent / "namadataset_raw/iris_raw.csv"
-OUTPUT_DEFAULT = Path(__file__).resolve().parent / "namadataset_preprocessing/iris_preprocessed.csv"
+RAW_DEFAULT = Path(__file__).resolve().parent.parent / "namadataset_raw/breast_cancer_raw.csv"
+OUTPUT_DEFAULT = Path(__file__).resolve().parent / "namadataset_preprocessing/breast_cancer_preprocessed.csv"
 
 
 def load_raw_dataset(raw_path: Path = RAW_DEFAULT) -> pd.DataFrame:
@@ -44,11 +44,9 @@ def build_preprocess_pipeline(feature_columns: Iterable[str]) -> ColumnTransform
     )
 
 
-def encode_target(target: pd.Series) -> Tuple[pd.Series, LabelEncoder]:
-    """Encode string labels into integers."""
-    encoder = LabelEncoder()
-    encoded = encoder.fit_transform(target)
-    return encoded, encoder
+def encode_target(target: pd.Series) -> Tuple[pd.Series, None]:
+    """Ensure target is integer encoded (dataset sudah 0/1)."""
+    return target.astype(int), None
 
 
 def run_preprocessing(
@@ -85,7 +83,7 @@ def run_preprocessing(
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Automate preprocessing for the Iris dataset.")
+    parser = argparse.ArgumentParser(description="Automate preprocessing for the breast cancer dataset.")
     parser.add_argument(
         "--raw_path",
         type=Path,
